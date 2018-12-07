@@ -1,0 +1,29 @@
+html{
+    height: 100%;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    background-color: lightgrey;
+}
+footer {
+    background-color: lightgray;
+    text-align: center;
+}
+#jtHr {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+#content {
+    background-image: url(./media/restaurant-hero-image.jpg);
+    background-size: cover;
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
+#cards {
+    padding-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}

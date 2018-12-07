@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>gEats: Order</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css' integrity='sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO'
+        crossorigin='anonymous'>
+    <link rel='stylesheet' type='text/css' media='screen' href='orders.css' />
+
+</head>
+
+<body>
+    <nav class='navbar navbar-dark bg-dark mb-3'>
+        <a class='navbar-brand' href='./index.html'>Galvanize Eats</a>
+    </nav>
+    <div it='mainContent' class='container'>
+        <div class='row'>
+            <div id='leftCol' class='col col-lg-7'>
+                <div class='row'>
+                    <div id='menBox' class='col col-lg-12 p-2'>
+                        <h2>Please Select an Item:</h2>
+                        <div id='menuList' class='list-group'>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div id='qtyBox' class='col col-lg-12'>
+                        <h2>Enter Quantity:</h2>
+                        <div class='input-group input-group-lg'>
+                            <input id='qtyInput' class='qtyInput'  name='quantity' type='number' min='0' max='100' placeholder='0'>
+                            <input for='quantity' 
+                            id='submit'
+                            class='btn btn-primary btn-lg qtyInput' type='submit' value='Submit'>
+                        </div>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div id='cusBox' class='col col-lg-12'>
+                        <h2>Please Enter Delivery Information:</h2>
+                        <div>
+                            <form>
+                                <div class='form-group'>
+                                    <label for='cusName'>Name:</label>
+                                    <input type='text' class='form-control' id='cusName' placeholder='John Doe'>
+                                </div>
+                                <div class='form-group'>
+                                    <label for='phoneNumber'>Phone Number:</label>
+                                    <input type='text' class='form-control' id='phoneNumber' placeholder='555-555-5555'>
+                                </div>
+                                <div class='form-group'>
+                                    <label for='address'>Address:</label>
+                                    <input type='text' class='form-control' id='address' placeholder='123 Sesame Street'>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id='rightCol' class='col col-lg-5'>
+                <div class='row'>
+                    <div id='ordBox' class='col col-lg-12'>
+                        <h2>Current Order:</h2>
+                        <div id='ordList' class='selItem'></div>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div id='totBox' class='col col-lg-12'>
+                        <h2>Your total is:</h2>
+                        <div id='totDis'>$0.00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='row'>
+                <button type='button' id='deliverBtn' class='btn btn-primary btn-lg btn-block'>Deliver It!</button>
+        </div>
+    </div>
+    <div id='footer' class='navbar navbar-dark bg-dark mt-3'>
+        <p class='navbar-brand text-center' href='./index.html'></p>&copy; Galvanize 2018 -- Denver Colorado</p>
+    </div>
+    <script src='orders-app.js'></script>
+</body>
+
+</html>

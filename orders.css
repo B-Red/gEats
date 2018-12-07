@@ -1,0 +1,53 @@
+html {
+    height: 100%
+}
+body {
+    height: 100%;
+}
+h2 {
+    text-decoration: underline;
+}
+.qtyInput {
+    text-align: end;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+#menBox{
+    border:2px solid gray;
+    border-radius:15px;
+    height: 30%;
+}
+#qtyBox{
+    border:2px solid gray;
+    border-radius:15px;
+    height: 30%;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#cusBox{
+    border:2px solid gray;
+    border-radius:15px;
+    height:30%;
+}
+#deliverBtn {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 20px;
+    height: 80px;
+}
+#rightCol {
+    border:2px solid gray;
+    border-radius:15px;
+}
+#leftCol {
+    height: 100%;
+}
+#footer {
+    color:white;
+    padding-top: 20px;
+}
